@@ -208,26 +208,24 @@ b>img {
 <div class="col3">
 <div>
 
-```css []
-[] .a1 {}  [] .b1 {}
+<pre><code data-line-numbers="1,3,4,5,6">[] .a1 {}  [] .b1 {}
 [] .a2 {}
 [] .a3 {}  [] .b3 {}
 [] *.a4 {} [] *.b4 {}
 [] *:where(.a5, .b5) {}
 [] :where(.a6, .b6) {}
-```
+</code></pre>
 
 </div>
 <div>
 
-```css []
-[]:is(:deep(.a1), :deep(.b1)) {}
+<pre><code data-line-numbers="3,5,6">[]:is(:deep(.a1), :deep(.b1)) {}
 [] .a2 {}
 [] .a3 {}  [] .b3 {}
 []:is(:deep(*).a4, :deep(*).b4) {}
 [] *:where(.a5, .b5) {}
 [] :where(.a6, .b6) {}
-```
+</code></pre>
 
 </div>
 </div>
